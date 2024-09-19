@@ -14,10 +14,10 @@ CREATE TABLE students (
 
 
 INSERT INTO students (name, guardian_name, phone_number, email,  profile_image) 
-VALUES ('John Doe', 'Jane Doe', 'john.doe@example.com', NULL);
+VALUES ('John Doe', 'Jane Doe', '+94775674665', 'john.doe@example.com', NULL);
 
 INSERT INTO students (name, guardian_name, phone_number, email,  profile_image) 
-VALUES ('Alice Smith', 'Robert Smith', 'alice.smith@example.com', NULL);
+VALUES ('Alice Smith', 'Robert Smith', '+94713689213', 'alice.smith@example.com', NULL);
 
 
 
