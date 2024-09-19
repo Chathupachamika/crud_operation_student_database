@@ -1,0 +1,22 @@
+CREATE DATABASE student_management;
+
+USE student_management;
+
+CREATE TABLE students (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(100) NOT NULL,
+    guardian_name VARCHAR(100) NOT NULL,
+    email VARCHAR(100) NOT NULL,
+    profile_image LONGBLOB,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+
+INSERT INTO students (name, guardian_name, email,  profile_image) 
+VALUES ('John Doe', 'Jane Doe', 'john.doe@example.com', NULL);
+
+INSERT INTO students (name, guardian_name, email,  profile_image) 
+VALUES ('Alice Smith', 'Robert Smith', 'alice.smith@example.com', NULL);
+
+
+

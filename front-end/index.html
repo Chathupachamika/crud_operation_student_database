@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Student Registration</title>
+        <link rel="stylesheet" href="styles.css">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    </head>
+    <body>
+        <h1>Student Information System</h1>
+
+        <section id="registration">
+            <h2>Register New Student</h2>
+            <form id="studentForm">
+                <label for="name">Student Name:</label>
+                <input type="text" id="name" name="name" required><br>
+                <br>
+                <label for="guardian">Guardian Name:</label>
+                <input type="text" id="guardian" name="guardian" required><br>
+                <br>
+                <label for="phone">Phone Number:</label>
+                <input type="text" id="phoneNumber" name="phone" required><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br>
+                <br>
+                <label for="profileImage">Profile Image:</label>
+                <input type="file" id="profileImage" name="profileImage" accept="image/*" required>
+                <br><br>
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob" required><br>
+                <br>
+                <button type="submit">Register</button>
+            </form>
+        </section>
+
+        <section id="studentList">
+            <h2>Registered Students</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Guardian</th>
+                        <th>PhoneNumber</th>
+                        <th>Email</th>
+                        <th>DOB</th>
+                        <th>Profile</th>
+                    </tr>
+                </thead>
+                <tbody id="studentsTable">
+                </tbody>
+            </table>
+        </section>
+
+        <div id="profileModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Student Profile</h2>
+                <div id="profileDetails"></div>
+            </div>
+        </div>
+        <script>
+            AOS.init({
+            duration: 3000
+            });
+            </script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script src="app.js"></script>
+    </body>
+</html>
